@@ -47,3 +47,9 @@ yarn add helmet
 ```
 yarn add express-rate-limit
 ```
+
+### 5º Passo: Instalar Redis
+
+```
+yarn add redis
+```
