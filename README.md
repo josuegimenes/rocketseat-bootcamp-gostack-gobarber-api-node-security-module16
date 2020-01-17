@@ -53,3 +53,11 @@ yarn add express-rate-limit
 ```
 yarn add redis
 ```
+
+### 6º Passo: Instalar Rate Limit Redis
+
+Usado para configuração do Redis.
+
+```
+yarn add rate-limit-redis
+```
