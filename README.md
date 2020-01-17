@@ -21,5 +21,13 @@ Sistema de barbearia para agendamento de serviços.
 Um middleware de proteção de força bruta para rotas expressas que limita a taxa de solicitações recebidas, aumentando o atraso a cada solicitação em uma sequência semelhante a fibonacci.
 
 ```
-yarn add ioredis
+yarn add express-brute
+```
+
+### 2º Passo: Instalar Express Brute Redis
+
+Usado para guardar o número de tentativas que um determinado ip de usuário tentou fazer na rota de autenticação, por exemplo.
+
+```
+yarn add express-brute-redis
 ```
