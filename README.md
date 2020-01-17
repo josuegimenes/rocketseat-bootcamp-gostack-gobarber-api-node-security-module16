@@ -15,3 +15,11 @@
 # Módulo 16: Aplicação Backend – GoBarber (Segurança no Node.js)
 
 Sistema de barbearia para agendamento de serviços.
+
+### 1º Passo: Instalar Express Brute
+
+Um middleware de proteção de força bruta para rotas expressas que limita a taxa de solicitações recebidas, aumentando o atraso a cada solicitação em uma sequência semelhante a fibonacci.
+
+```
+yarn add ioredis
+```
