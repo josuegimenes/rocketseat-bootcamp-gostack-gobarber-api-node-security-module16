@@ -31,3 +31,11 @@ Usado para guardar o número de tentativas que um determinado ip de usuário ten
 ```
 yarn add express-brute-redis
 ```
+
+### 3º Passo: Instalar Helmet
+
+É um middleware do Express que basicamente adiciona vários tipos de configurações nos Headers da nossa resposta para habilitar alguns tipos de proteção de forma automática.
+
+```
+yarn add helmet
+```
