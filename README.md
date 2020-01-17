@@ -39,3 +39,11 @@ yarn add express-brute-redis
 ```
 yarn add helmet
 ```
+
+### 4º Passo: Instalar Express Rate Limit
+
+É um middleware semelhante ao Express Brute e aplica para todas as rotas da aplicação. Usado para limitar solicitações repetidas a APIs públicas e/ou rotas específicas, como redefinição de senha.
+
+```
+yarn add express-rate-limit
+```
