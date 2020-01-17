@@ -3,6 +3,7 @@ import 'dotenv/config';
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
+import helmet from 'helmet';
 import Youch from 'youch';
 import * as Sentry from '@sentry/node';
 import 'express-async-errors';
@@ -35,6 +36,7 @@ class App {
     /* Define endereços que podem acessar a API (em produção):
     this.server.use(cors({ origin: 'https://rocketseat.com.br' })); ou
     this.server.use(cors()); para permitir qualquer endereço. */
+    this.server.use(helmet());
     this.server.use(cors());
 
     this.server.use(express.json());
