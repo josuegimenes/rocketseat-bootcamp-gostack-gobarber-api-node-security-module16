@@ -36,11 +36,16 @@ class App {
     /* Tratamento de erros com Sentry */
     this.server.use(Sentry.Handlers.requestHandler());
 
+    this.server.use(helmet());
+
     /* Define endereços que podem acessar a API (em produção):
     this.server.use(cors({ origin: 'https://rocketseat.com.br' })); ou
     this.server.use(cors()); para permitir qualquer endereço. */
-    this.server.use(helmet());
-    this.server.use(cors());
+    this.server.use(
+      cors({
+        origin: process.env.FRONT_URL, // Variável global no arquivo .env
+      })
+    );
 
     this.server.use(express.json());
 
